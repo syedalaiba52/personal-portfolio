@@ -25,7 +25,7 @@ html {
 }
 
 p {
-  color: rgb(rgb(85, 85, 85));
+  color: rgb(85, 85, 85);
 }
 
 /* transition */
@@ -180,7 +180,7 @@ section {
   margin: auto 0;
 }
 
-.section__pic-container img {
+.profile-img img {
   border-radius: 50%;
   object-fit: cover;
 }
