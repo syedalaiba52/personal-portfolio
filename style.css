@@ -273,7 +273,8 @@ section {
 /* ABOUT SECTION */
 #profile,
 #about,
-#experience {
+#experience,
+#projects {
   position: relative;
   margin-top: 2rem;
 }
@@ -356,4 +357,9 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* PROJECTS SECTION */
+.project-img {
+  width: 100%;
 }
