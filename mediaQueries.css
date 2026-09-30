@@ -49,12 +49,6 @@
   .mb {
     margin-bottom: 1rem;
   }
-
-  /* nav, .nav-links {
-    flex-direction: column;
-    height: 100%;
-    gap: 0.7rem;
-} */
 }
 
 /* 850px and below */
@@ -68,11 +62,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    position: relative;
+    z-index: 100;
   }
 
   #hamburger-nav .menu-links {
+    position: absolute;
     right: 0;
     top: 100%;
+    z-index: 101;
   }
 }
 
