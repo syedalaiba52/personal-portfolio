@@ -269,7 +269,9 @@ section {
 }
 
 /* ABOUT SECTION */
-#about {
+#profile,
+#about,
+#experience {
   position: relative;
   margin-top: 2rem;
 }
@@ -322,5 +324,5 @@ section {
 
 /* Experience Section */
 #experience {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
