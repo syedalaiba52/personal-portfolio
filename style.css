@@ -209,6 +209,7 @@ section {
 .profile-img img {
   border-radius: 50%;
   object-fit: cover;
+  border: 0.1rem solid var(--accent-hover);
 }
 
 .section__text {
@@ -269,7 +270,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: 1px solid var(--accent);
+  border: .1rem solid var(--accent);
 }
 
 .btn-color-1:hover,
@@ -330,6 +331,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  border: 0.1rem solid var(--accent-hover);
 }
 
 .arrow {
