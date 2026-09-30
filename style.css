@@ -403,7 +403,7 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 1rem;
+  border-radius: .5rem;
   width: 100% !important;
   height: 400px !important;
 }
