@@ -1,14 +1,57 @@
-@media screen and (max-width: 1400px) {
+/* 1200px and below */
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5%;
+  }
+
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-container {
+    gap: 2rem;
   }
 
   .about-containers {
     flex-wrap: wrap;
   }
+
+  .arrow {
+    display: none;
+  }
+  .section__pic-container {
+    margin: 0 auto;
+  }
+
+  .section-container,
+  .about-containers {
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .text-container {
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-container > p {
+    margin-top: 1rem;
+  }
+
+  .mb {
+    margin-bottom: 1rem;
+  }
 }
 
+/* 850px and below */
 @media screen and (max-width: 850px) {
   #desktop-nav {
     display: none;
@@ -16,92 +59,67 @@
 
   #hamburger-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 1.5rem;
   }
 
   #hamburger-nav .menu-links {
-    position: absolute;
-    top: 100%;
     right: 0;
-    z-index: 10;
-    padding: 0 2rem;
-  }
-
-  #hamburger-nav .menu-links a {
-    font-size: 1rem;
-    font-weight: 500;
+    top: 100%;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-
-  section,
-  .section-container {
-    height: fit-content;
-  }
-
-  section {
-    margin: 0 5%;
-  }
-
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-
-  .about-containers {
-    margin-top: 0;
-  }
-}
-
+/* 600px and below */
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  section {
+    margin: 0 1.25rem;
+    padding-top: 2rem;
+    height: auto;
   }
 
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+    padding: 2rem 0 4rem;
   }
 
-  article {
-    font-size: 1rem;
+  .section__pic-container {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
   }
 
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  .section-container,
+  .about-containers {
+    flex-direction: column;
+    height: auto;
   }
 
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .article-container {
+    gap: 1.25rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    width: 100%;
   }
 
   .contact-info-container {
-    margin: 0;
+    margin: 0.75rem;
   }
 
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 0.9rem;
+  .btn-container {
+    flex-wrap: wrap;
   }
 
   .nav-links {
@@ -110,54 +128,38 @@
     gap: 0.5rem;
   }
 
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-
-  .logo {
-    font-size: 1rem;
-  }
-
-  .section__pic-container {
-    width: auto;
-    height: 80vw;
-    justify-content: center;
-  }
-
-  .title {
-    font-size: 1.9rem;
-  }
-
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-
-  .text-container {
-    text-align: justify;
+  footer {
+    height: auto;
+    padding: 2rem 0;
   }
 
   .about-pic {
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
   }
 }
 
-@media (min-width: 250px) and (max-width: 600px) {
+/* 250px - 400px */
+@media screen and (min-width: 250px) and (max-width: 400px) {
   .btn-container {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
   }
 
-  .mt {
-    margin-top: 15rem;
+  .title {
+    font-size: 1.7rem;
   }
-}
 
-@media (max-width: 318px) {
-  .contact-info-container p a {
-    font-size: 0.7rem;
+  .section__text__p2 {
+    font-size: 1.1rem;
+  }
+
+  .short-email {
+    display: flex;
+  }
+
+  .long-email {
+    display: none;
   }
 }

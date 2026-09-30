@@ -426,8 +426,7 @@ article .icon {
 #contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 70vh;
+  height: 100%;
 }
 
 .contact-info-upper-container {
@@ -545,4 +544,8 @@ footer p {
     height: auto;
     padding: 2rem 0;
   }
+}
+
+.short-email{
+  display: none;
 }
